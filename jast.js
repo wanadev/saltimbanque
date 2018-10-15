@@ -28,10 +28,17 @@ module.exports = {
                 ],
                 "branch": "origin/master",
                 "max-kept-releases": 5
+            }, {
+                "action": "remote-commands",
+                "servers": [
+                    "py-prod1"
+                ],
+                "commands": [
+                    `/usr/bin/supervisorctl restart ${APP_NAME}`
+                ],
             }]
         }
 
-        // TODO remote command to restart app
 
     }
 
