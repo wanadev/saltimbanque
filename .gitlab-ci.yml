@@ -1,0 +1,13 @@
+stages:
+    - build
+    - deploy
+
+jast_deploy:
+    type: deploy
+    image: node:9
+    only:
+        - /^v?[0-9]+\.[0-9]+\.[0-9]+(-[a-z0-9]+)?$/
+    before_script:
+        - npm install -g git+ssh://git@git.wanadev.org:infra/jast.git
+    script:
+        - jast deploy
