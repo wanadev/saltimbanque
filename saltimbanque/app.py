@@ -32,6 +32,7 @@ def index():
 @app.route("/html-to-pdf/<string:url>")
 def html_to_pdf(url):
     url = b64decode(url)
+    url = url.decode("utf-8")
     resp = Response(pdf_from_url(url))
     resp.headers["Content-Type"] = "application/pdf"
     return resp
