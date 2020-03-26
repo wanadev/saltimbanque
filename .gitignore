@@ -1,2 +1,3 @@
 *.pyc
 __env__
+*.egg-info
