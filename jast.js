@@ -34,7 +34,7 @@ module.exports = {
                     "py-prod1"
                 ],
                 "commands": [
-                    `/usr/bin/supervisorctl restart ${APP_NAME}`
+                    `sudo /usr/bin/supervisorctl restart ${APP_NAME}`
                 ],
             }]
         }
