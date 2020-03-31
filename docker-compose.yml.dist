@@ -1,0 +1,9 @@
+version: "2.1"
+
+services:
+    app:
+        build: ./docker/
+        volumes:
+        - .:/app
+        ports:
+        - 5000
