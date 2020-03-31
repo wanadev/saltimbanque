@@ -45,3 +45,7 @@ Usage
 
     http://example.org/html-to-pdf/<path:url>
 
+::
+
+    http://example.org/html-to-png/<path:url>
+
