@@ -49,3 +49,17 @@ Usage
 
     http://example.org/html-to-png/<path:url>
 
+
+Changelog
+---------
+
+* **1.2.0:**
+
+  * Fixes deployment
+  * Updates dependencies
+  * Adds PNG raster function in addition to PDF
+
+* **1.1.1:** Fix encoding issue when decoding URLs
+* **1.1.0:** Encode URL in base64 to avoid issue when used with an Nginx front
+* **1.0.1:** Update deploy config
+* **1.0.0:** Initial release

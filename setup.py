@@ -13,7 +13,7 @@ if os.path.isfile("README.rst"):
 
 setup(
     name="saltimbanque",
-    version="1.1.1",
+    version="1.2.0",
     description="Provides an API to convert web pages to PDF",
 
     long_description=long_description,
