@@ -8,7 +8,7 @@ Build Docker image:
     before_script:
         - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.wanadev.org
     script:
-        - docker build -t registry.wanadev.org/infra/saltimbanque:$CI_COMMIT_REF_NAME --pull --f ./docker/prod/Dockerfile .
+        - docker build -t registry.wanadev.org/infra/saltimbanque:$CI_COMMIT_REF_NAME --pull -f ./docker/prod/Dockerfile .
         - docker push registry.wanadev.org/infra/saltimbanque:$CI_COMMIT_REF_NAME
     only:
         - master
