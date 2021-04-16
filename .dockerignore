@@ -1,4 +1,3 @@
-docker
 docker-compose.yml.dist
 jast.js
 .gitlab-ci.yml

@@ -1,11 +1,38 @@
-FROM python:3
+FROM debian:10
 
-WORKDIR /app
+RUN apt update \
+	&& apt install -y \
+		nginx \
+		python3-pip \
+		supervisor \
+# Saltimbanque dependencies
+		libcairo2 \
+		libpango1.0-0 \
+		fonts-roboto \
+	&& rm -rf \
+		/var/cache/apt \
+		/var/log/nginx/access.log \
+		/var/log/nginx/error.log \
+	&& ln -s /dev/stdout /var/log/nginx/access.log \
+	&& ln -s /dev/stderr /var/log/nginx/error.log
 
-COPY . .
+# Supervisor
+COPY ./docker/prod/supervisor/supervisord.conf /etc/supervisor/
+COPY ./docker/prod/supervisor/gunicorn.conf /etc/supervisor/conf.d/
+COPY ./docker/prod/supervisor/nginx.conf /etc/supervisor/conf.d/
 
-RUN pip install -r requirements.txt
+# NGinx
+EXPOSE 80
 
-EXPOSE 5000
+COPY ./docker/prod/nginx/default.conf /etc/nginx/sites-enabled/default
 
-CMD ["flask", "run", "--host=0.0.0.0"]
+# Saltimbanque
+WORKDIR /saltimbanque
+
+COPY . /saltimbanque
+
+RUN pip3 install virtualenv \
+	&& virtualenv __env__ \
+	&& bash -c "source __env__/bin/activate && pip3 install -r requirements.txt && pip3 install gunicorn"
+
+CMD ["supervisord", "--nodaemon"]
