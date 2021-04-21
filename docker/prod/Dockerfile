@@ -4,6 +4,7 @@ RUN apt update \
 	&& apt install -y \
 		nginx \
 		python3-pip \
+		python3-venv \
 		supervisor \
 # Saltimbanque dependencies
 		libcairo2 \
@@ -31,8 +32,7 @@ WORKDIR /saltimbanque
 
 COPY . /saltimbanque
 
-RUN pip3 install virtualenv \
-	&& virtualenv __env__ \
-	&& bash -c "source __env__/bin/activate && pip3 install -r requirements.txt && pip3 install gunicorn"
+RUN python3 -m venv __env__ \
+	&& bash -c "source __env__/bin/activate && pip install -r requirements.txt gunicorn"
 
 CMD ["supervisord", "--nodaemon"]
