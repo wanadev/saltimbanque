@@ -43,11 +43,15 @@ Usage
 
 ::
 
-    http://example.org/html-to-pdf/<path:url>
+    http://example.org/html-to-pdf/<string:base64_url>
 
 ::
 
-    http://example.org/html-to-png/<path:url>
+    http://example.org/html-to-png/<string:base64_url>
+
+Where
+
+* ``base64_url`` is the URL of the HTML document, encoded in base64.
 
 
 Changelog
