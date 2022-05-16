@@ -1,4 +1,4 @@
-FROM debian:10
+FROM debian:11
 
 RUN apt update \
 	&& apt install -y \
@@ -33,6 +33,7 @@ WORKDIR /saltimbanque
 COPY . /saltimbanque
 
 RUN python3 -m venv __env__ \
+	&& bash -c "source __env__/bin/activate && pip install --upgrade pip" \
 	&& bash -c "source __env__/bin/activate && pip install -r requirements.txt gunicorn"
 
 CMD ["supervisord", "--nodaemon"]
