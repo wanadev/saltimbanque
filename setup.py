@@ -15,24 +15,25 @@ setup(
     name="saltimbanque",
     version="1.2.0",
     description="Provides an API to convert web pages to PDF",
-
     long_description=long_description,
-
     author="Wanadev",
     author_email="contact@wanadev.fr",
     maintainer="Fabien LOISON",
-
     packages=find_packages(),
-
     install_requires=[
         "Flask",
         "WeasyPrint",
+    ],
+    extras_require={
+        "dev": [
+            "nox",
+            "flake8",
+            "black",
         ],
-
+    },
     entry_points={
         "console_scripts": [
-            "saltimbanque = saltimbanque.__main__:main"
+            "saltimbanque = saltimbanque.__main__:main",
         ]
-    }
-
+    },
 )

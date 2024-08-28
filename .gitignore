@@ -1,4 +1,8 @@
+# Python
 *.pyc
 __env__
 *.egg-info
+.nox
+
+# Docker
 docker-compose.yml
