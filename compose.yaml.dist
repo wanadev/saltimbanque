@@ -1,7 +1,0 @@
-services:
-    app:
-        build: ./docker/
-        volumes:
-        - .:/app
-        ports:
-        - 5000
