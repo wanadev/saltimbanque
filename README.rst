@@ -1,6 +1,8 @@
 Saltimbanque
 ============
 
+|Github| |Discord| |PYPI Version| |Build Status| |Black| |License|
+
 Provides a simple Web API to convert web pages to PDF and PNG using WeasyPrint_.
 
 .. _WeasyPrint: https://weasyprint.org/
@@ -156,3 +158,17 @@ Changelog
 * **v1.1.0:** Encode URL in base64 to avoid issue when used with an Nginx front
 * **v1.0.1:** Update deploy config
 * **v1.0.0:** Initial release
+
+
+.. |Github| image:: https://img.shields.io/github/stars/wanadev/saltimbanque?label=Github&logo=github
+   :target: https://github.com/wanadev/saltimbanque
+.. |Discord| image:: https://img.shields.io/badge/chat-Discord-8c9eff?logo=discord&logoColor=ffffff
+   :target: https://discord.gg/BmUkEdMuFp
+.. |PYPI Version| image:: https://img.shields.io/pypi/v/saltimbanque.svg
+   :target: https://pypi.python.org/pypi/saltimbanque
+.. |Build Status| image:: https://github.com/wanadev/saltimbanque/actions/workflows/python-ci.yml/badge.svg
+   :target: https://github.com/wanadev/saltimbanque/actions
+.. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://black.readthedocs.io/en/stable/
+.. |License| image:: https://img.shields.io/pypi/l/saltimbanque.svg
+   :target: https://github.com/wanadev/saltimbanque/blob/master/COPYING
