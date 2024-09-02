@@ -3,6 +3,8 @@
 __env__
 *.egg-info
 .nox
+build/
+dist/
 
 # Docker
 docker-compose.yml

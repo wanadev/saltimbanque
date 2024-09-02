@@ -26,7 +26,7 @@ Then, to install Saltimbanque from PyPI, run (as root)::
     python3 -m venv /opt/saltimbanque/env
     /opt/saltimbanque/env/bin/pip install saltimbanque gunicorn
 
-Alternatively, to install from Git, run (as root)::
+Alternatively, to install it from Git, run (as root)::
 
     mkdir -p /opt/saltimbanque
     git clone https://github.com/wanadev/saltimbanque.git /opt/saltimbanque/saltimbanque.git
@@ -126,7 +126,7 @@ You can also fix coding style errors automatically with::
     nox -s black_fix
 
 
-Satup / Run Saltimbanque for dev
+Setup / Run Saltimbanque for dev
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Install dependencies::
