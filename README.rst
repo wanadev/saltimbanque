@@ -148,6 +148,10 @@ Changelog
 
   * Nothing yet ;)
 
+* **v1.2.1:**
+
+  * misc: Added missing AGPL license
+
 * **v1.2.0:**
 
   * Fixes deployment
