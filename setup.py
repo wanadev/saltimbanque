@@ -16,6 +16,7 @@ setup(
     version="1.2.0",
     description="Provides an API to convert web pages to PDF",
     long_description=long_description,
+    license="AGPLv3",
     author="Wanadev",
     author_email="contact@wanadev.fr",
     maintainer="Fabien LOISON",
