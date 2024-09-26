@@ -22,6 +22,12 @@ Ensure you have a complete Python 3 installation. On Debian / Ubuntu, run (as ro
 
     apt install build-essential python3 python3-dev python3-venv
 
+You will also have to install additional dependencies for WeasyPrint. On Debian and Ubuntu, run the following command as root::
+
+    apt install libpango-1.0-0 libpangoft2-1.0-0 libharfbuzz-subset0
+
+For other distributions, `see the WeasyPrint installation documentation <https://doc.courtbouillon.org/weasyprint/stable/first_steps.html#installation>`__.
+
 Then, to install Saltimbanque from PyPI, run (as root)::
 
     mkdir -p /opt/saltimbanque
