@@ -154,6 +154,7 @@ Changelog
 
   * misc: Added Python 3.13 support (@flozz)
   * misc!: Removed Python 3.8 support (@flozz)
+  * misc: Replaced setup.py + setuptools by pyproject.toml + flit (@flozz)
 
 * **v1.2.1:**
 
