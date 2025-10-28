@@ -152,6 +152,10 @@ Changelog
 
 * **[NEXT]** (changes on ``master``, but not released yet):
 
+  * Nothing yet ;)
+
+* **v1.2.2:**
+
   * misc: Replaced setup.py + setuptools by pyproject.toml + flit (@flozz)
   * misc: Added Python 3.13, 3.14 support (@flozz)
   * misc!: Removed Python 3.8, 3.9 support (@flozz)
