@@ -33,10 +33,10 @@ dev = [
 saltimbanque = "saltimbanque.__main__:main"
 
 [project.urls]
-source = "https://github.com//wanadev/saltimbanque"
-documentation = "https://github.com//wanadev/saltimbanque/blob/master/README.rst"
-changelog = "https://github.com//wanadev/saltimbanque?tab=readme-ov-file#changelog"
-issues = "https://github.com//wanadev/saltimbanque/issues"
+source = "https://github.com/wanadev/saltimbanque"
+documentation = "https://github.com/wanadev/saltimbanque/blob/master/README.rst"
+changelog = "https://github.com/wanadev/saltimbanque?tab=readme-ov-file#changelog"
+issues = "https://github.com/wanadev/saltimbanque/issues"
 chat = "https://discord.gg/BmUkEdMuFp"
 
 [tool.black]
