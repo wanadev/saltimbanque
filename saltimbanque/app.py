@@ -5,7 +5,6 @@ from flask import Flask, Response
 from .pdf import pdf_from_url
 from .png import png_from_url
 
-
 app = Flask(__name__)
 
 

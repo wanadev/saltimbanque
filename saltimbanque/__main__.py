@@ -2,7 +2,6 @@ import os
 
 from .app import app
 
-
 PORT = int(os.environ["PORT"]) if "PORT" in os.environ else 5000
 
 
