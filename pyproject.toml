@@ -13,7 +13,7 @@ readme = "README.rst"
 keywords = ["pdf", "html"]
 license = "AGPL-3.0-or-later"
 license-files = ["COPYING"]
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
     "Flask",
     "WeasyPrint",
@@ -40,7 +40,7 @@ issues = "https://github.com/wanadev/saltimbanque/issues"
 chat = "https://discord.gg/BmUkEdMuFp"
 
 [tool.black]
-target-version = ["py310"]
+target-version = ["py311"]
 
 [tool.flake8]
 ignore = [
